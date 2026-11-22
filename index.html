@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#164d42">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Crect width='180' height='180' rx='38' fill='%23164d42'/%3E%3Cpath d='M53 44h74v17H53zM61 70h58v66H61z' fill='%23f3c971'/%3E%3Cpath d='M76 88h28M76 105h28M76 122h18' stroke='%23164d42' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+  <title>Стройность</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <p class="eyebrow">ТВОЙ ТЕМП</p>
+      <h1>Стройность</h1>
+      <p id="heroText">Спокойный старт. Важнее регулярность, чем героизм.</p>
+      <div class="week-chip" id="weekChip">Неделя 1 из 8</div>
+    </header>
+
+    <section id="medicalNotice" class="notice warning">
+      <strong>Умеренная нагрузка разрешена врачом.</strong> Сохраняй спокойный темп: без натуживания, задержки дыхания, пресса, прыжков и тяжестей.
+    </section>
+
+    <section id="todayCard" class="today-card"></section>
+
+    <nav class="tabs" aria-label="Разделы приложения">
+      <button class="tab active" data-view="plan">План</button>
+      <button class="tab" data-view="journal">Журнал</button>
+      <button class="tab" data-view="weight">Вес</button>
+      <button class="tab" data-view="settings">Данные</button>
+    </nav>
+
+    <section id="plan" class="view active"></section>
+    <section id="journal" class="view"></section>
+    <section id="weight" class="view"></section>
+    <section id="settings" class="view"></section>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
